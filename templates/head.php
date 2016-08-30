@@ -6,5 +6,5 @@
   <meta name="description" content="<?php bloginfo('description'); ?>">
   <?php wp_head(); ?>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
 </head>

@@ -2,7 +2,7 @@ footer {
     background-color: $brand-color5;
     color: $brand-color2;
     padding: $spacing-sm 0;
-    font-size: 18px;
+    font-size: $font-normal - 4;
     hr {
         border-color: $brand-color4;
     }

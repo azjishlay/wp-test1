@@ -18,7 +18,16 @@ $font-light:            300;
 $font-regular:          400;
 $font-bold:             700;
 
+// Sizing
+$font-smaller:          16px;
+$font-normal:           18px;
+$font-bigger:           36px;
+$font-biggest:          60px;
+
 // Spacing
 $spacing-lg:            120px;
 $spacing-md:            $spacing-lg / 2;
 $spacing-sm:            $spacing-md / 2;
+
+// Icons
+$icon-size:             75px;

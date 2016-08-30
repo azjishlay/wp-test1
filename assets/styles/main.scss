@@ -18,3 +18,182 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+
+body {
+    background-color: transparent;
+    color: $brand-color1;
+    font: $font-normal $font-stack;
+    font-weight: $font-regular;
+    text-align: center;
+}
+
+.main {
+    padding: 0;
+}
+
+.section-main, .section-sub, .section-detail {
+    margin: 0;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+.section-main {
+    background: $brand-primary;
+    padding: $spacing-lg $spacing-lg;
+}
+
+.section-sub {
+    background: $brand-color3;
+    padding: $spacing-lg;
+}
+
+.section-detail {
+    background-color: $brand-color2;
+    padding: $spacing-lg $spacing-lg;
+}
+
+.section-image {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    &.image1 {
+        background-image: url("../images/banner1.jpg");
+    }
+    &.image2 {
+        background-image: url("../images/banner2.jpg");
+    }
+}
+
+.thumbnail {
+    border: 0;
+}
+
+.icon-holder {
+    width: 100%;
+    i.fa {
+        font-size: $icon-size - 10;
+        border: 2px solid $brand-primary;
+        border-radius: $icon-size * 4;
+        padding: $icon-size / 1.625;
+        width: $icon-size * 2;
+        height: $icon-size * 2;
+        text-align: center;
+    }
+}
+
+.caption {
+    h2:first-of-type {
+        padding-bottom: $spacing-sm;
+    }
+    p {
+        font-size: $font-smaller;
+        font-weight: $font-light;
+        padding-top: $spacing-sm / 2;
+        padding-bottom: $spacing-sm;
+    }
+}
+
+.header-main {
+    font-size: $font-biggest;
+    font-weight: $font-bold;
+}
+
+.header-tag {
+    font-size: $font-bigger;
+    font-weight: $font-light;
+}
+
+.header-sub {
+    font-size: $font-normal;
+    font-weight: $font-light;
+}
+
+.header-bold {
+    font-size: $font-normal;
+    font-weight: $font-bold;
+}
+
+.listings {
+    li:first-of-type {
+        border-top: 1px solid $brand-color4;
+        margin-top: $spacing-lg;
+    }
+    li {
+        border-bottom: 1px solid $brand-color4;
+        width: 100%;
+        height: $icon-size + $spacing-sm * 2;
+        padding: $spacing-sm;
+        &:hover, &:focus, &:active {
+            background-color: $brand-color3;
+        }
+        a {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            &:hover, &:focus, &:active {
+                text-transform: none;
+            }
+        }
+        .circle {
+            display: none;
+            width: $icon-size;
+            height: $icon-size;
+        }
+        .circle, .listings-left, .listings-center, .listings-right {
+            float: left;
+            text-align: left;
+            padding: $spacing-sm 0;
+            p {
+                padding-left: none;
+            }
+        }
+        .listings-left {
+            display: block;
+        }
+        .listings-center {
+            display: none;
+        }
+        .listings-right {
+            display: none;
+        }
+    }
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+    .listings {
+        li {
+            .listings-left, .listings-center, .listings-right {
+                p {
+                    padding-left: $spacing-sm;
+                }
+            }
+            .listings-center, .listings-right {
+                display: block;
+            }
+        }
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+    .listings {
+        li {
+            .circle {
+                display: block;
+            }
+        }
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

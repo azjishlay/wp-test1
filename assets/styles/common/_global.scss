@@ -4,6 +4,34 @@ hr {
     border-top: 1px solid $brand-primary;
 }
 
+.line {
+    border-top: 2px solid $brand-primary;
+    width: 82px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .caps {
     text-transform: uppercase;
+}
+
+.circle {
+    background-color: $brand-primary;
+    border-radius: 100%;
+}
+
+.color1 {
+    color: $brand-color1;
+}
+.color2 {
+    color: $brand-color2;
+}
+.color3 {
+    color: $brand-color3;
+}
+.color4 {
+    color: $brand-color4;
+}
+.color5 {
+    color: $brand-color5;
 }
