@@ -1,0 +1,15 @@
+footer {
+    background-color: $brand-color5;
+    color: $brand-color2;
+    padding: $spacing-sm 0;
+    font-size: 18px;
+    hr {
+        border-color: $brand-color4;
+    }
+    .row {
+        margin-top: $spacing-lg;
+    }
+    .row:last-of-type {
+        margin-bottom: $spacing-lg;
+    }
+}
