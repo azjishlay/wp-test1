@@ -1,9 +1,24 @@
-// Glyphicons font path
-$icon-font-path:        "../fonts/";
-
 // Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
+$grid-float-breakpoint: 2400px;
 
 // Colors
-$brand-primary:         #27ae60;
+$brand-primary:         #4bb1b7;
+$brand-color1:          #000000;
+$brand-color2:          #ffffff;
+$brand-color3:          #d0d0d0;
+$brand-color4:          #c8c8c8;
+$brand-color5:          #2b2b2b;
+
+// Fonts
+$font-stack:            'Roboto', sans-serif;
+$font-thin:             100;
+$font-light:            300;
+$font-regular:          400;
+$font-bold:             700;
+
+// Spacing
+$spacing-lg:            120px;
+$spacing-md:            $spacing-lg / 2;
+$spacing-sm:            $spacing-md / 2;
